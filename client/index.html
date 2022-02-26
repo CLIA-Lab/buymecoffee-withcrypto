@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="container mx-auto">
     <!--Start section one-->
-    <div class="bg-[#000018]">
+    <div class="bg-[#000022] container mx-auto">
         <div class="flex">
             <div class="flex w-2/4 h-full">
                <img class="ml-8 mt-3 w-10 h-16" src="./src/Capa 1.png" alt="LogoImg">
@@ -24,7 +24,8 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col justify-between bg-no-repeat bg-top bg-[url('./src/SectionOne.jpg')] h-[32rem]">
+      <!-- End section one-->
+    <div class="container mx-auto flex flex-col justify-between bg-no-repeat bg-top bg-[url('./src/SectionOne.jpg')] h-[32rem]">
         
         <div>
             <div class="flex justify-center mt-[18rem]">
@@ -38,14 +39,26 @@
                 <h1 class="text-3xl font-semibold">Who we Are?</h1>
                 <p class="mt-[1rem] text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, error officiis! Nostrum aliquam perferendis qui. Suscipit, reiciendis voluptatibus eaque ullam delectus, accusamus nobis quidem culpa labore, ducimus recusandae magnam cum?</p>
             </div>
-            <div class="w-1/2 static flex justify-end ">
-                <img class="absolute bottom-[0.50rem] left-[60rem]" src="./src/imgSection2.png" alt="Section Two Image">
+            <div class="w-1/2 relative flex justify-end ">
+                <img class="absolute bottom-[0rem] right-3" src="./src/imgSection2.png" alt="Section Two Image">
             </div>
         </div>
 
         <!--End section two-->    
     </div>
-    <!-- End section one-->
-    
+    <!-- Section Three-->
+
+        <div class="flex bg-no-repeat bg-top bg-[url('./src/Section3Final.jpg')] min-h-[12rem] mt-[9rem]">
+           <div class="pt-[8rem] pl-[15rem]">
+             <img src="./src/BlockSection3.png" alt="">
+           </div>
+           <div>
+            <h1 class="text-4xl text-white">What technology do we</h1>
+           </div>
+           
+        </div>
+
+    <!-- End Section Three-->
 </body>
 </html>
+<!--bottom-[0.50rem] left-[60rem]-->
