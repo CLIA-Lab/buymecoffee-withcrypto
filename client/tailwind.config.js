@@ -5,20 +5,26 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'sm': {'min': '200px', 'max': '767px'},
-      // => @media (min-width: 640px) { ... }
+      'mobile-S-Laptop': {'min': '320px', 'max': '1024px'},
+      // => @media (min-width: 320px and max-width: 1024px) { ... }
 
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
+      'mobile-S': {'min': '320px', 'max': '375px'},
+       // => @media (min-width: 320px and max-width: 375px) { ... }
 
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+       'mobile-M': {'min': '375px', 'max': '425px'},
+       // => @media (min-width: 375px and max-width: 425px) { ... }
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+       'mobile-L': {'min': '425px', 'max': '768px'},
+       // => @media (min-width: 425px and max-width: 768px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+       'tablet': {'min': '768px', 'max': '1024px'},
+       // => @media (min-width: 768px and max-width: 1024px) { ... }
+
+       'laptop': {'min': '1024px', 'max': '1440px'},
+       // => @media (min-width: 1024px and max-width: 1440px) { ... }
+
+       'laptop-L': {'min': '1440px', 'max': '2560px'},
+       // => @media (min-width: 1024px and max-width: 1440px) { ... }
     }
   },
   plugins: [],
