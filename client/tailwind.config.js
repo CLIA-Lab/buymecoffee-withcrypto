@@ -7,6 +7,9 @@ module.exports = {
     screens: {
       'mobile-S-Laptop': {'min': '320px', 'max': '1024px'},
       // => @media (min-width: 320px and max-width: 1024px) { ... }
+      
+      'laptop-4k': {'min': '1024px', 'max': '2560px'},
+        // => @media (min-width: 1024px and max-width: 2560px) { ... }       
 
       'mobile-S': {'min': '320px', 'max': '375px'},
        // => @media (min-width: 320px and max-width: 375px) { ... }
@@ -25,6 +28,9 @@ module.exports = {
 
        'laptop-L': {'min': '1440px', 'max': '2560px'},
        // => @media (min-width: 1024px and max-width: 1440px) { ... }
+
+       '4k': {'min': '2560px'},
+       // => @media (min-width: 2560px) { ... }
     }
   },
   plugins: [],

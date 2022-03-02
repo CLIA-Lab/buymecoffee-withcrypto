@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="bg-[#000022]">
           <div className="container mx-auto">
             <div class="flex mobile-S-Laptop:justify-between">
-                <div class="flex w-2/4 h-full">
+                <div class="flex w-2/4">
                     <img class="ml-8 mt-3 w-10 h-16" src={logo} alt="LogoImg"/>
                     <h1 className='text-3xl mobile-S:text-lg  font-serif text-stone-50 cursor-pointer mt-8 ml-4'>
                         CryptoCoffee
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <div className='pt-[1.50rem] mr-[1.50rem]'>
                     {toggleMenu
                         ?<FaTimes fontSize={28} className='text-white cursor-pointer laptop:hidden laptop-L:hidden' onClick={() => setToggleMenu(false)}/>
-                        :<FaBars fontSize={28} className='text-white cursor-pointer laptop:hidden laptop-L:hidden' onClick={() => setToggleMenu(true)}/>
+                        :<FaBars fontSize={28} className='text-white cursor-pointer laptop:hidden laptop-L:hidden 4k:hidden' onClick={() => setToggleMenu(true)}/>
                     }
                     {toggleMenu && (
                         <ul

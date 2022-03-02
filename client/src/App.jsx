@@ -1,9 +1,11 @@
-import {Welcome, Navbar} from './components';
+import {Navbar, Welcome, AboutUs} from './components';
 
 const App = () => {
   return (
     <div className="">
        <Navbar/>
+       <Welcome/>
+       <AboutUs/>
     </div>
   )
 }
