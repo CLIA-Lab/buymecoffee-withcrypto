@@ -5,7 +5,7 @@ import { FaTimes } from 'react-icons/fa';
 
 const NavbarItem = ({title, classProps}) => {
     return(
-        <li className={`text-3xl ml-[1.50rem] font-serif text-slate-400 hover:text-stone-50 cursor-pointer ${classProps}`}>
+        <li className={`text-3xl ml-[1.50rem] font-serif text-white hover:text-slate-300 cursor-pointer ${classProps}`}>
             {title}
         </li>
     );
@@ -16,7 +16,7 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
 
     return (
-      <div className="bg-[#000022]">
+      <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           <div className="container mx-auto">
             <div class="flex mobile-S-Laptop:justify-between">
                 <div class="flex w-2/4">
