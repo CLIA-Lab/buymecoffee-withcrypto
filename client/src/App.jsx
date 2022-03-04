@@ -1,4 +1,4 @@
-import {Navbar, Welcome, AboutUs, Technology, CodeModalComponent} from './components';
+import {Navbar, Welcome, AboutUs, Technology, CodeModalComponent, Snnipet} from './components';
 
 const App = () => {
   return (
