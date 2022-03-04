@@ -5,27 +5,116 @@ const CodeModalComponent = () => {
     return (
         <div className='container mx-auto mt-[2rem]'>
              <h1 className="text-3xl text-center pt-[5rem]">How to use our component?</h1>
-            <div className="flex justify-center  py-[5rem]">
-               <div className="w-1/2 h-[20rem flex justify-center">
-                    <img src={ModalComponentImg} className='w-[40rem] h-[25rem]' alt="modal component code image" />
+            <div className="flex mobile-S-Laptop:flex-col justify-center py-[5rem] mobile-S-Laptop: px-[1.50rem]">
+               <div className="laptop-4k:w-1/2 laptop-4k:h-[20rem flex justify-center">
+                    <img src={ModalComponentImg} className='laptop-4k:w-[40rem] laptop-4k:h-[25rem] mobile-S-Laptop:w-[100%] mobile-S-Laptop:h-auto' alt="modal component code image" />
                </div>
-               <div className="w-1/2 h-[20rem">
-                    <h1 className="text-3xl ">Guide to start using us</h1>
-                    <p className='text-lg pt-6'>Our component is designed to be used in any browser and any website that our users want. For this we use Bootstrap 5, in this way we ensure compatibility with multiple browsers.</p>
+               <div className='laptop-4k:w-1/2 overflow-x-hidden'>
+                    <h1 className="text-3xl mobile-S-Laptop:pt-[4rem]">Guide to start using us</h1>
+                    <p className='text-lg pt-6'>Our component is designed to be used in any browser and any website that our users want. For this we use Bootstrap 5, in this way we ensure compatibility with multiple browsers.</p>                   
+                    <div className='h-[15rem] overflow-y-scroll overflow-x-hidden'>                   
+                    {/*
+                    
+                    Step 1 
+                    
+                    */}
                     <p className='font-bold pt-6'>Step 1:</p>
-                    <p className='pt-1'>You must add the Bootstrap link to your html between the "&lt;head/&gt;" tags</p>
-                    <div className=''>
-                        <div className={`${gradient} w-[40rem] h-[4rem] mt-4 rounded-lg select-all hover:overflow-x-auto overflow-y-hidden `}>
+                    <p className='pt-1'>You must add the Bootstrap link to your html between the "&lt;head/&gt;" tags.</p>
+                   
+                        <div className={`${gradient} w-[40rem] h-[4rem] mt-4 rounded-lg select-all hover:overflow-x-scroll overflow-y-hidden`}>
                         <pre className="text-white text-lg pt-1">                       
                             &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;                            
                         </pre>
                         </div>
+                        {/* 
+                        
+                        Step 2
+                        
+                        */}
+                        <p className='font-bold pt-6'>Step 2:</p>
+                        <p className='pt-1'>Now you need to create the button that will allow you to display the modal component.</p>
+                        <div className={`${gradient} w-[40rem] mt-4 rounded-lg select-all hover:overflow-x-scroll`}>
+                        <pre className="text-white text-lg pt-1">                       
+                            &lt;div class="d-grid gap-2 d-md-flex justify-content-md-end fixed-bottom"&gt; 
+                            <br/>
+                            <span className='pl-8'>&lt;</span>button class="rounded-circle" style="outline: none; border: none;" data-bs-toggle="modal" data-bs-target="#ModalFormCrypto" data-bs-whatever="@mdo"<samp>&gt;</samp>
+                            <br/>
+                            <samp className='pl-[5rem]'>&lt;</samp>img type="button" src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg" class="img-thumbnail rounded-circle mx-auto" style="width: 4rem ; height: 4rem;" alt="NothingToShow"<span>&gt;</span>
+                            <br/>
+                            <span className='pl-8'>&lt;</span>/button<span>&gt;</span>  
+                            <br/>
+                            <span>&lt;</span>/div<samp>&gt;</samp>                   
+                        </pre>
+                        </div>
+                        {/*
+                        
+                        Step 3
+                        
+                        */}
+                        <p className='font-bold pt-6'>Step 3:</p>
+                        <p className='pt-1'>Now you need to create the modal component that will allow you to display the modal screen.</p>
+                        
+                        <div className={`${gradient} w-[40rem] mt-4 rounded-lg select-all hover:overflow-x-scroll`}>
+                        <pre className="text-white text-lg pt-1">
+                            <samp>&lt;</samp>div class="modal fade" id="ModalFormCrypto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"<span>&gt;</span>      
+                            <br/>
+                            
+                            <samp>&lt;</samp>div class="modal-dialog"<span>&gt;</span><br/>
+                                <span>&lt;</span>div class="modal-content"<span>&gt;</span><br/>
+                                <span>&lt;</span>div class="modal-header"<span>&gt;</span><br/>
+                                    <span>&lt;</span>div class="container text-center"<samp>&gt;</samp><br/>
+                                        <span>&lt;</span>img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png?20201112074605" class="rounded-circle img-thumbnail" style="width: 20% !important; height: 20% !important;" alt=""<span>&gt;</span><br/>                
+                                        <span>&lt;</span>h5 class="modal-title" id="exampleModalLabel"<span>&gt;</span>Send Your Crypto<span>&lt;</span>/h5<span>&gt;</span><br/>
+                                    <span>&lt;</span>/div<span>&gt;</span><br/>
+                                
+                                <span>&lt;</span>/div<span>&gt;</span><br/>
+                                <span>&lt;</span>div class="modal-body"<span>&gt;</span><br/>
+                                <span>&lt;</span>form<span>&gt;</span><br/>
+                                <span>&lt;</span>div class="mb-3"<span>&gt;</span><br/>
+                                    <span>&lt;</span>label for="recipient-name" class="col-form-label"<span>&gt;</span>Adress to Send: <span>&lt;</span>/label<span>&gt;</span><br/>
+                                        <span>&lt;</span>input type="text" class="form-control" id="recipient-name"<span>&gt;</span><br/>
+                                    <span>&lt;</span>/div<span>&gt;</span><br/>
+                                    <span>&lt;</span>div class="mb-3"<span>&gt;</span><br/>
+                                        <span>&lt;</span>label for="recipient-name" class="col-form-label"<span>&gt;</span>
+                                            Amount to send:<span>&lt;</span>/label<span>&gt;</span><br/>
+                                        <span>&lt;</span>input type="number" class="form-control" id="recipient-name"<span>&gt;</span><br/>
+                                    <span>&lt;</span>/div<span>&gt;</span><br/>
+                                    <span>&lt;</span>div class="dropdown"<span>&gt;</span><br/>
+                                        <span>&lt;</span>button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"<span>&gt;</span><br/>
+                                            Select your cryptocurrency
+                                        <span>&lt;</span>/button<span>&gt;</span><br/>
+                                        <span>&lt;</span>ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"<span>&gt;</span><br/>
+                                            <span>&lt;</span>li<span>&gt;</span><span>&lt;</span>a class="dropdown-item" href="#"<span>&gt;</span>Tron<span>&lt;</span>/a<span>&gt;</span><span>&lt;</span>/li<span>&gt;</span><br/>
+                                            <span>&lt;</span>li<span>&gt;</span><span>&lt;</span>a class="dropdown-item" href="#"<span>&gt;</span>Bitcoin<span>&lt;</span>/a<span>&gt;</span><span>&lt;</span>/li<span>&gt;</span><br/>
+                                            <span>&lt;</span>li<span>&gt;</span><span>&lt;</span>a class="dropdown-item" href="#"<span>&gt;</span>Etherium<span>&lt;</span>/a<span>&gt;</span><span>&lt;</span>/li<span>&gt;</span><br/>
+                                        <span>&lt;</span>/ul<span>&gt;</span><br/>
+                                    <span>&lt;</span>/div<span>&gt;</span><br/>
+                                    <span>&lt;</span>/form<span>&gt;</span><br/>
+                                <span>&lt;</span>/div<span>&gt;</span><br/>
+                                <span>&lt;</span>div class="modal-footer"<span>&gt;</span><br/>
+                                    <span>&lt;</span>button type="button" class="btn btn-secondary" data-bs-dismiss="modal"<span>&gt;</span>Close<span>&lt;</span>/button<span>&gt;</span><br/>
+                                    <span>&lt;</span>button type="button" class="btn btn-primary"<span>&gt;</span>Send cryptocurrency<span>&lt;</span>/button<span>&gt;</span>
+                                <span>&lt;</span>/div<span>&gt;</span><br/>
+                              <span>&lt;</span>/div<span>&gt;</span><br/>
+                            <span>&lt;</span>/div<span>&gt;</span><br/>
+                        </pre>
                     </div>
-                   
-                  
-               </div>                               
-            </div>                    
-        </div>
-    );
+                    {/*
+                        
+                    Step 4
+                        
+                    */}
+                    <p className='font-bold pt-6'>Step 4:</p>
+                    <p className='pt-1'>You need to copy the script that will give functionality to the button whose function is to make the modal screen appear.</p>
+                    <div className={`${gradient} w-[40rem] h-[4rem] mt-4 rounded-lg select-all hover:overflow-x-scroll overflow-y-hidden`}>
+                        <pre className="text-white text-lg pt-1">
+                            <span>&lt;</span>script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"<span>&gt;</span><span>&lt;</span>/script<span>&gt;</span>                           
+                        </pre>
+                    </div>
+                </div>                 
+            </div>                               
+        </div>                    
+    </div>
+);
 }
 export default CodeModalComponent;
