@@ -1,4 +1,4 @@
-import {Navbar, Welcome, AboutUs, Technology, CodeModalComponent, Snnipet} from './components';
+import {Navbar, Welcome, AboutUs, Technology, CodeModalComponent, Footer} from './components';
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
        <AboutUs/>
        <Technology/>
        <CodeModalComponent/>
+       <Footer/>
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import SectionTwoImg from '../../images/imgSection2.png';
-import Person1 from '../../images/personImg/person1.jpg';
 
 const Welcome = () => {
     return (
