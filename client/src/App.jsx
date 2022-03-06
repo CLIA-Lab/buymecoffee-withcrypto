@@ -1,4 +1,4 @@
-import {Navbar, Welcome, AboutUs, Technology, CodeModalComponent, Footer} from './components';
+import {Navbar, Welcome, AboutUs, Technology, CodeModalComponent, Footer} from './Views';
 
 const App = () => {
   return (
