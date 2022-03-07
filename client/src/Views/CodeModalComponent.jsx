@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-
+import { Button } from '../Components';
+import { Steps } from '../Components';
 import ModalComponentImg from '../../images/ModalComponentImg.png';
 
 const CodeModalComponent = () => {
     const gradient = 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500';
-    const [value, setValue] = useState('');
-    const [copied, setCopied] = useState(false);
+   
     
 
     return (
@@ -26,18 +26,14 @@ const CodeModalComponent = () => {
                     Step 1 
                     
                     */}
-                    <p className='font-bold pt-6'>Step 1:</p>
-                    <p className='pt-1'>You must add the Bootstrap link to your html between the "&lt;head/&gt;" tags.</p>
-                   
-                    <div className={`${gradient} w-[95%] h-[4rem] mt-4 rounded-lg select-all hover:overflow-x-scroll overflow-y-hidden`}>
-                        <pre className="text-white text-lg pt-4" value={value} onSelect={({target: value}) => setValue(value)}>                       
-                            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;                            
-                        </pre>
-                    </div>
+                    <Steps 
+                        stepTitle='Step 1'
+                        stepInfo='You must add the Bootstrap link to your html between the "&lt;head/&gt;" tags.'
+                        preText='&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;'
+                    />
                     <div className='flex justify-end w-[95%]'>
-                    <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
-                        <button className='border-none rounded-lg mt-3 text-lg w-[5rem] h-[2rem] bg-sky-500/75 text-white'>Copy</button>
-                    </CopyToClipboard>                    
+                   
+                    <Button text='Copy'/>                   
                     </div>
                     
 
