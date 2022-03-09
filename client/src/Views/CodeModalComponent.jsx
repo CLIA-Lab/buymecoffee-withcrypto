@@ -1,7 +1,4 @@
 import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { Button } from '../Components';
 import { Steps } from '../Components';
 import ModalComponentImg from '../../images/ModalComponentImg.png';
 
@@ -29,12 +26,7 @@ const CodeModalComponent = () => {
                     <Steps 
                         stepTitle='Step 1'
                         stepInfo='You must add the Bootstrap link to your html between the "&lt;head/&gt;" tags.'
-                        preText='&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;'
                     />
-                    <div className='flex justify-end w-[95%]'>
-                   
-                    <Button value='Copy'/>                   
-                    </div>
                     
 
                         {/* 
@@ -57,7 +49,7 @@ const CodeModalComponent = () => {
                             <span>&lt;</span>/div<samp>&gt;</samp>                   
                         </pre>
                         </div>
-                        <Button value='Copy'/>
+                       
                         {/*
                         
                         Step 3
@@ -110,7 +102,7 @@ const CodeModalComponent = () => {
                             <span>&lt;</span>/div<span>&gt;</span><br/>
                         </pre>
                     </div>
-                    <Button value='Copy'/>
+                    
                     {/*
                         
                     Step 4
@@ -123,7 +115,7 @@ const CodeModalComponent = () => {
                             <span>&lt;</span>script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"<span>&gt;</span><span>&lt;</span>/script<span>&gt;</span>                           
                         </pre>
                     </div>
-                    <Button value='Copy'/>
+                   
                 </div>                 
             </div>                               
         </div>                    
