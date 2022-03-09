@@ -33,7 +33,7 @@ const CodeModalComponent = () => {
                     />
                     <div className='flex justify-end w-[95%]'>
                    
-                    <Button text='Copy'/>                   
+                    <Button value='Copy'/>                   
                     </div>
                     
 
@@ -57,9 +57,7 @@ const CodeModalComponent = () => {
                             <span>&lt;</span>/div<samp>&gt;</samp>                   
                         </pre>
                         </div>
-                        <div className='flex justify-end w-[95%]'>
-                            <button className='border-none rounded-lg mt-3 text-lg w-[5rem] h-[2rem] bg-sky-500/75 text-white'>Copy</button>
-                        </div>
+                        <Button value='Copy'/>
                         {/*
                         
                         Step 3
@@ -112,9 +110,7 @@ const CodeModalComponent = () => {
                             <span>&lt;</span>/div<span>&gt;</span><br/>
                         </pre>
                     </div>
-                    <div className='flex justify-end w-[95%]'>
-                        <button className='border-none rounded-lg mt-3 text-lg w-[5rem] h-[2rem] bg-sky-500/75 text-white'>Copy</button>
-                    </div>
+                    <Button value='Copy'/>
                     {/*
                         
                     Step 4
@@ -127,9 +123,7 @@ const CodeModalComponent = () => {
                             <span>&lt;</span>script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"<span>&gt;</span><span>&lt;</span>/script<span>&gt;</span>                           
                         </pre>
                     </div>
-                    <div className='flex justify-end w-[95%]'>
-                        <button className='border-none rounded-lg mt-3 text-lg w-[5rem] h-[2rem] bg-sky-500/75 text-white'>Copy</button>
-                    </div>
+                    <Button value='Copy'/>
                 </div>                 
             </div>                               
         </div>                    
