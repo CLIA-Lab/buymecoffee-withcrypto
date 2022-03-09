@@ -1,14 +1,5 @@
 /*
-const Button = (props) => {
-    return (
-        <div className='flex justify-end w-[95%]'>
-        
-            <button className='border-none rounded-lg mt-3 text-lg w-[5rem] h-[2rem] bg-sky-500/75 text-white'>{props.text}</button>
-                            
-        </div>
-    );
-}
-export default Button;
+This button will take care of copying the code that is in the CodeModalComponent.jsx view, when clicked it should change the text of its name from "Copy" to "Copied".
 */
 import React from 'react';
 import ReactDOM from 'react-dom';
