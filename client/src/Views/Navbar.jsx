@@ -18,9 +18,9 @@ const Navbar = () => {
     return (
       <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           <div className="container mx-auto">
-            <div class="flex mobile-S-Laptop:justify-between">
-                <div class="flex w-2/4">
-                    <img class="ml-8 mt-3 w-10 h-16" src={logo} alt="LogoImg"/>
+            <div className="flex mobile-S-Laptop:justify-between">
+                <div className="flex w-2/4">
+                    <img className="ml-8 mt-3 w-10 h-16" src={logo} alt="LogoImg"/>
                     <h1 className='text-3xl mobile-S:text-lg  font-serif text-stone-50 cursor-pointer mt-8 ml-4'>
                         CryptoCoffee
                     </h1>
