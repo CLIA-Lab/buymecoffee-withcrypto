@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+    <!-- <script type="text/javascript" src="../js/functions.js"></script> -->
+
+    <title>Buy me A Coffe with Crypto</title>
+  </head>
+  <body>
+    <h1>Hello, Coffe-Team!</h1>
+    <!-- Here statirng modal module-->
+
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end fixed-bottom">
+        <button class="rounded-circle" style="outline: none; border: none;" data-bs-toggle="modal" data-bs-target="#ModalFormCnxSend" data-bs-whatever="@mdo"
+        onclick="setDivsVisib()" >
+            <img type="button" src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg" class="img-thumbnail rounded-circle mx-auto" style="width: 4rem ; height: 4rem;" alt="NothingToShow">
+        </button>
+    </div>
+
+    <div class="modal fade" id="ModalFormCnxSend" tabindex="-1"         aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="container text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png?20201112074605" class="rounded-circle img-thumbnail" style="width: 20% !important; height: 20% !important;" alt="">                
+                    <h5 class="modal-title" id="exampleModalLabel">Connect your Wallet  </h5>
+                </div>
+               
+            </div>
+            <div class="modal-body">
+                <div id="msg_id">
+                    <div class="container">  <!-- divs for connect or send -->
+
+                        <div class="text-center" id="connDiv">
+                            <button id="connBtn" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sendDiv" aria-expanded="false" aria-controls="sendDiv" onclick="connect()">
+                                Connect
+                            </button>
+                        </div>
+                    
+                        <div class="collapse" id="sendDiv">
+                            <div class="card card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="hidden" class="form-control" id="recipient-name" value="0x6cC5C2AB53F1876F3E663e5A4B496D6a2326665D">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="col-form-label">
+                                            Amount of Ether to Donate:</label> 
+                                        <input id="ammountInput" type="text" class="form-control" id="recipient-name">            
+                                    </div>
+                                    <label for="crypto-name" class="col-form-label">Sending Ether(Ethereum)</label>
+                                </form>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="send()">Send cryptocurrency</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Here end-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="functions.js"></script> <!-- Our Js -->
+    
+    </body>
+</html>
