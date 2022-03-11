@@ -1,3 +1,8 @@
+/*
+    DOCUMENTATION
+
+    The copyright appears in this section. It is the last component that appears on the web page
+*/
 const Footer = () => {
     return (
         <div className="flex bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-[4rem] justify-center items-center">

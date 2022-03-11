@@ -1,3 +1,8 @@
+/* 
+    DOCUMENTATION:
+
+    This section displays information from the creators of the website and the modal component.
+*/
 import SectionTwoImg from '../../images/imgSection2.png';
 
 const Welcome = () => {

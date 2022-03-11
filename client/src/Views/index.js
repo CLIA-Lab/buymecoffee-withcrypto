@@ -1,3 +1,8 @@
+/* 
+    DOCUMENTATION:   
+
+    In this file the different components that are defined in the "Views" folder are called
+*/
 export { default as Welcome} from './Welcome';
 export { default as Navbar} from './Navbar';
 export { default as AboutUs} from './AboutUs';

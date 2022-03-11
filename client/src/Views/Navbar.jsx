@@ -1,3 +1,8 @@
+/*
+    DOCUMENTATION:
+
+    This section shows the navbar with the website logo and three links that do not yet have functionality.
+*/
 import React, { useState } from 'react';
 import logo from '../../images/Capa 1.png';
 import { FaBars } from 'react-icons/fa'; 

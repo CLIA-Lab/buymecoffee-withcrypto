@@ -1,3 +1,8 @@
+/* 
+    DOCUMENTATION:
+
+    This component has the functionality of calling the element that is defined in the file called Steps.jsx that is inside the folder called Component and passing it two props called "stepTitle" and "stepInfo" so that all the HTML code that appears on the screen appears. the user must copy for the modal component to appear.
+*/
 import React, {useState} from 'react';
 import { Steps } from '../Components';
 import ModalComponentImg from '../../images/ModalComponentImg.png';

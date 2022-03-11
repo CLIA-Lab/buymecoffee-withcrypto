@@ -1,3 +1,8 @@
+/*
+  DOCUMENTATION:
+
+  This is the second component to display on the webpage, it contains a single button that has no functionality yet.
+*/
 const Welcome = () => {
   const gradient = 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500';
     return (

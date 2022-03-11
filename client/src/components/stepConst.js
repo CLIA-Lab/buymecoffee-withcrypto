@@ -1,3 +1,9 @@
+/* 
+    DOCUMENTATION:
+
+    In this file we try to define 4 variables that contain html code, which is the code that the user must copy so that the modal component appears on their website, these variables will be stored by a constant of type array. This array must be called by the Steps.jsx file inside the "Component" folder.
+*/
+
 function variable(){
 
 

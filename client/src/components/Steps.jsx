@@ -1,3 +1,9 @@
+/*
+    DOCUMENTATION:
+
+   The element that shows the HTML code that the user must copy and its respective button with the function of copying the HTML code to the clipboard is created in this file. This element will be called by the "CodeModalComponent.jsx" file that is inside the Views folder.
+*/
+
 import React from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
