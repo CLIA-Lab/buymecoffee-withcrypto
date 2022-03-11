@@ -1,5 +1,5 @@
 /*
-  DOCUMENTATION:
+  DOCUMENTATION :
 
   This is the second component to display on the webpage, it contains a single button that has no functionality yet.
 */
