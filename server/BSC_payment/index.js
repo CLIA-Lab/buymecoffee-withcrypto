@@ -43,11 +43,12 @@ async function getAccount() {
   accounts = await ethereum.request({ method: 'eth_requestAccounts' });
   const account = accounts[0];
   var accountString = String(account);
+
   var address = `Address: ${accountString.slice(0,5)} ... ${accountString.slice(accountString.length -4)}`;
   showAccount.innerHTML = address;
   chain = await ethereum.request({ method: 'eth_chainId' });
    if(chain != '0x61'){
-    showChainId.innerHTML = 'Pliss connect to BSC network';
+    showChainId.innerHTML = 'Please connect to BSC network';
     mountvalue.sty
    }else{
     showChainId.innerHTML = 'Amount to send:';

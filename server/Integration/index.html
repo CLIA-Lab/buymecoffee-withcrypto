@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Buy me A Coffe with Crypto</title>
+  </head>
+  <body>
+        <h1>Hello, world!</h1>
+        <!-- Here statirng modal module-->
+
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end fixed-bottom">
+            <button class="connectwallet rounded-circle" style="outline: none; border: none;" data-bs-toggle="modal" data-bs-target="#ModalFormCrypto" data-bs-whatever="@mdo" >
+                <img type="button" src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg" class="img-thumbnail rounded-circle mx-auto" style="width: 4rem ; height: 4rem;" alt="NothingToShow">
+            </button>
+        </div>
+
+
+        <div class="modal fade" id="ModalFormCrypto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="container text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png?20201112074605" class="rounded-circle img-thumbnail" style="width: 20% !important; height: 20% !important;" alt="">                
+                    <h5 class="showAccount modal-title" id="exampleModalLabel">Your Adress</h5>
+                </div>
+            
+            </div>
+            <div class="modal-body">
+                <form>
+                
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCryptoBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Cryptocurrency
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" onclick="changeCrypto('BNB')">
+                                <img alt="BNB logo" width="25px" height="25px" src="https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/assets/WBNB.svg">
+                                BNB <small class="text-muted">(Bep20)</small>
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeCrypto('BUSD')">
+                                <img alt="BUSD logo" width="25px" height="25px" src="https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/assets/BUSD.svg">
+                                
+                                    BUSD <small class="text-muted">(Bep20)</small>
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeCrypto('USDT')">
+                                <img alt="USDT logo" width="25px" height="25px" src="https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/assets/USDT.svg">
+                                USDT <small class="text-muted">(Bep20)</small>
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeCrypto('ETH')">
+                                <img alt="ETH logo" width="25px" height="25px" src="https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/assets/ETH.svg">
+                                ETH <small class="text-muted">(ERC20)</small>
+                            </a></li>
+                        </ul>
+                </div>
+                <div class="">
+                    <label for="recipient-name" class="col-form-label" id="ChainId"></label>
+                    <input id="amountInput" type="number" style="padding: 7px; max-width: 200px;" class="form-control" id="mountValue">
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="sendBtn" type="button" class="sendEthButton btn btn-primary">Send cryptocurrency</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Example single danger button -->
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Select a Coin</option>
+            <option value="1">
+                <li><a class="dropdown-item" href="#">
+                    <img alt="BNB logo" width="25px" height="25px" src="https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/assets/WBNB.svg">
+                    BNB <small class="text-muted">(Bep20)</small>
+                </a></li>
+
+            </option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          
+       
+          
+    <!-- Here end-->
+
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+<div class="">
+    <div style="position: relative; height: 390px; width: 100%; overflow: auto; will-change: transform; direction: ltr;">
+        <div style="height: 840px; width: 100%;">
+            <div class="" disabled="" style="position: absolute; left: 0px; top: 0px; height: 56px; width: 100%;">
+                
+                <div class="" style="position: absolute; left: 0px; top: 56px; height: 56px; width: 100%;"><img class="sc-93d16c22-0 ftJMay" alt="BUSD logo" src="./Exchange _ PancakeSwap - $6.344_files/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png">
+                    <div class="sc-91e5cc43-0 eerxsc"><div color="text" class="sc-be365e-0 bzHRUn">BUSD
+                    </div>
+                    <div color="textSubtle" class="sc-be365e-0 bpJRQh"> BUSD Token</div>
+                </div>
+                <div class="sc-c4ec0fdf-0 sc-2ce7e6d-0 sc-2ce7e6d-4 dGKbaC iyDJze jKFiHD" style="justify-self: flex-end;">
+                    <div title="0.195148606014247057" color="text" class="sc-be365e-0 sc-9ca546ac-0 dYcagF ekDXIM">0.1951
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
